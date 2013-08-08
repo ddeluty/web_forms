@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>A Very Basic Form</title>
+    
+	<style type="text/css">
+
+		.standard_input{
+			background: #FFC;
+		}
+
+		textarea{
+			font-family: "arial";
+		}
+
+		.submit_buttom{
+			background-color: black;
+			width: 100px;
+			padding: 
+		}
+	
+	
+		input {
+			background: #FFC;	
+			margin: 10px;
+		}
+
+	</style>
+
+   
+</head>
+
+<body>
+
+<div class="container">
+	<h1>Our simple web form</h1>
+
+	<form method="post" action="/login.php"></form>
+		<input type="text" id="first name" name="first_name" class="standard_input" placeholder="First Name"/>
+		<input type="email" id="first_name" name="email" />
+		<input type="password" id="password" class="standard_input" placeholder="password" />
+
+		<textarea name="comments" id="comments" class="standard_input" placeholder="write comment here"></textarea>
+
+		<div class="break">
+			<input type="radio" name="gender" value="male"/> Male
+			<input type="radio" name="gender" value="female"/>Female
+
+			<!-- you can add "checked="true" to make one of the bubbles filled in by default -->
+		</div>
+
+		<div class="break">
+			<input type="checkbox" name="contact" value="phone"/>Phone
+			<input type="checkbox" name="contact" value="email"/>Email
+		</div>
+
+		<div class="break">
+			<select name="dob">
+				<option value="">Select an age</option>
+				<option value="1988">1988</option>
+				<option value="1989">1989</option>
+				<option value="1990">1990</option>
+			</select>
+		</div>
+
+		<div class="break">
+			<input type="submit" value="Submit the form!" class="submit_button"/>
+		</div>
+
+
+
+</div><!-- .container -->
+</body>
+
+</html>
